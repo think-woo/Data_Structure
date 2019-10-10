@@ -1,15 +1,15 @@
-//½ºÅÃ »ı¼ºÇÏ±â
+//ìŠ¤íƒ ìƒì„±í•˜ê¸°
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h> //malloc(), free()
 
 struct _STACK {
-	int size; //½ºÅÃÀÇ ÃÖ´ë Å©±â
-	int *arr; //µ¥ÀÌÅÍÅ¸ÀÔÀº »ç¿ëÀÚ ÀÓÀÇ·Î ¼³Á¤ÇÏ±â, ¹è¿­ »ç¿ëÀº µ¿ÀÏ
-	int TOP; //topÀÇ À§Ä¡
+	int size; //ìŠ¤íƒì˜ ìµœëŒ€ í¬ê¸°
+	int *arr; //ë°ì´í„°íƒ€ì…ì€ ì‚¬ìš©ì ì„ì˜ë¡œ ì„¤ì •í•˜ê¸°, ë°°ì—´ ì‚¬ìš©ì€ ë™ì¼
+	int TOP; //topì˜ ìœ„ì¹˜
 };
 
-struct _STACK create_stack(int maxStackSize); //ÇØ´ç Å©±â¸¦ Áö´Ñ ½ºÅÃ »ı¼º
+struct _STACK create_stack(int maxStackSize); //í•´ë‹¹ í¬ê¸°ë¥¼ ì§€ë‹Œ ìŠ¤íƒ ìƒì„±
 
 int main()
 {
@@ -33,8 +33,8 @@ struct _STACK create_stack(int maxStackSize){
 	struct _STACK Stack;
 
 	Stack.size = maxStackSize;
-	Stack.arr = malloc(sizeof(int)*maxStackSize);
-	Stack.TOP = 0; //0À¸·Î ÃÊ±âÈ­ÇØ¾ß ÀÎµ¦½º ¿ªÇÒÀ» ÇÒ ¼ö ÀÖÀ½
+	Stack.arr[maxStackSize];
+	Stack.TOP = 0; //0ìœ¼ë¡œ ì´ˆê¸°í™”í•´ì•¼ ì¸ë±ìŠ¤ ì—­í• ì„ í•  ìˆ˜ ìˆìŒ
 
 	return Stack;
 }
