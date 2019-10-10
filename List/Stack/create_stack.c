@@ -33,7 +33,7 @@ struct _STACK create_stack(int maxStackSize){
 	struct _STACK Stack;
 
 	Stack.size = maxStackSize;
-	Stack.arr[maxStackSize];
+	Stack.arr = malloc(sizeof(int)*maxStackSize);
 	Stack.TOP = 0; //0으로 초기화해야 인덱스 역할을 할 수 있음
 
 	return Stack;
