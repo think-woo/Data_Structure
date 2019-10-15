@@ -19,7 +19,7 @@ int main(){
 void bubble_sort(int arr[], int count){
 
 	int i, j;
-	int temp; //�ӽú���
+	int temp; //ÀÓ½Ãº¯¼ö
 
 	for(i=0; i<count; i++){
 		for(j=0; j<(count-1)-i; j++){
